@@ -14,6 +14,8 @@
 		4A68B54B289446A500D4A990 /* processingSaver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A68B549289446A500D4A990 /* processingSaver.xcdatamodeld */; };
 		4A68B54D289446A700D4A990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A68B54C289446A700D4A990 /* Assets.xcassets */; };
 		4A68B550289446A700D4A990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A68B54E289446A700D4A990 /* LaunchScreen.storyboard */; };
+		4A68B5582894561700D4A990 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A68B5572894561700D4A990 /* HistoryTableViewCell.swift */; };
+		4A68B55A2894564E00D4A990 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A68B5592894564E00D4A990 /* HistoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4A68B54C289446A700D4A990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A68B54F289446A700D4A990 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A68B551289446A700D4A990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A68B5572894561700D4A990 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		4A68B5592894564E00D4A990 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				4A68B540289446A400D4A990 /* AppDelegate.swift */,
 				4A68B542289446A500D4A990 /* SceneDelegate.swift */,
 				4A68B544289446A500D4A990 /* ViewController.swift */,
+				4A68B5572894561700D4A990 /* HistoryTableViewCell.swift */,
+				4A68B5592894564E00D4A990 /* HistoryTableViewController.swift */,
 				4A68B546289446A500D4A990 /* Main.storyboard */,
 				4A68B54C289446A700D4A990 /* Assets.xcassets */,
 				4A68B54E289446A700D4A990 /* LaunchScreen.storyboard */,
@@ -143,8 +149,10 @@
 			files = (
 				4A68B545289446A500D4A990 /* ViewController.swift in Sources */,
 				4A68B541289446A400D4A990 /* AppDelegate.swift in Sources */,
+				4A68B55A2894564E00D4A990 /* HistoryTableViewController.swift in Sources */,
 				4A68B54B289446A500D4A990 /* processingSaver.xcdatamodeld in Sources */,
 				4A68B543289446A500D4A990 /* SceneDelegate.swift in Sources */,
+				4A68B5582894561700D4A990 /* HistoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
