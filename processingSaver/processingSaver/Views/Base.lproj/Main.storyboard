@@ -133,6 +133,9 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="resetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0vn-xP-4Ui"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQL-1J-qi6">
                                                 <rect key="frame" x="199" y="0.0" width="175" height="75"/>
@@ -153,6 +156,9 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="getMyRateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wld-6r-0qE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -175,6 +181,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="GrossTransTextField" destination="A4Q-GV-wRR" id="Jeu-Fz-oOS"/>
+                        <outlet property="getMyRateOutlet" destination="mQL-1J-qi6" id="0nR-pa-aDN"/>
+                        <outlet property="myRateLabel" destination="kFB-va-T8U" id="2vN-0a-cFh"/>
+                        <outlet property="processingFeesTextField" destination="ahd-KU-yQt" id="3sM-pD-0yA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

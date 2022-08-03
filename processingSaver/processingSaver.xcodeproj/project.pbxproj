@@ -16,6 +16,9 @@
 		4A68B550289446A700D4A990 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A68B54E289446A700D4A990 /* LaunchScreen.storyboard */; };
 		4A68B5582894561700D4A990 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A68B5572894561700D4A990 /* HistoryTableViewCell.swift */; };
 		4A68B55A2894564E00D4A990 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A68B5592894564E00D4A990 /* HistoryTableViewController.swift */; };
+		4A68B562289A05B000D4A990 /* ProcessingDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A68B561289A05B000D4A990 /* ProcessingDataManager.swift */; };
+		4A68B564289A067E00D4A990 /* ProcessingRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A68B563289A067E00D4A990 /* ProcessingRate.swift */; };
+		4A68B566289AEC5300D4A990 /* PDataHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A68B565289AEC5300D4A990 /* PDataHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		4A68B551289446A700D4A990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A68B5572894561700D4A990 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		4A68B5592894564E00D4A990 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		4A68B561289A05B000D4A990 /* ProcessingDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingDataManager.swift; sourceTree = "<group>"; };
+		4A68B563289A067E00D4A990 /* ProcessingRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingRate.swift; sourceTree = "<group>"; };
+		4A68B565289AEC5300D4A990 /* PDataHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDataHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +68,69 @@
 		4A68B53F289446A400D4A990 /* processingSaver */ = {
 			isa = PBXGroup;
 			children = (
-				4A68B540289446A400D4A990 /* AppDelegate.swift */,
-				4A68B542289446A500D4A990 /* SceneDelegate.swift */,
-				4A68B544289446A500D4A990 /* ViewController.swift */,
-				4A68B5572894561700D4A990 /* HistoryTableViewCell.swift */,
-				4A68B5592894564E00D4A990 /* HistoryTableViewController.swift */,
-				4A68B546289446A500D4A990 /* Main.storyboard */,
-				4A68B54C289446A700D4A990 /* Assets.xcassets */,
-				4A68B54E289446A700D4A990 /* LaunchScreen.storyboard */,
+				4A68B55B289A027800D4A990 /* Resources */,
+				4A68B55C289A028B00D4A990 /* Managers */,
+				4A68B55D289A02B500D4A990 /* ViewModels */,
+				4A68B55E289A02D800D4A990 /* Models */,
+				4A68B55F289A02E900D4A990 /* Views */,
+				4A68B560289A030300D4A990 /* Controlers */,
 				4A68B551289446A700D4A990 /* Info.plist */,
 				4A68B549289446A500D4A990 /* processingSaver.xcdatamodeld */,
 			);
 			path = processingSaver;
+			sourceTree = "<group>";
+		};
+		4A68B55B289A027800D4A990 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A68B54C289446A700D4A990 /* Assets.xcassets */,
+				4A68B540289446A400D4A990 /* AppDelegate.swift */,
+				4A68B542289446A500D4A990 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4A68B55C289A028B00D4A990 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4A68B561289A05B000D4A990 /* ProcessingDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4A68B55D289A02B500D4A990 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4A68B55E289A02D800D4A990 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A68B563289A067E00D4A990 /* ProcessingRate.swift */,
+				4A68B565289AEC5300D4A990 /* PDataHistory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A68B55F289A02E900D4A990 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A68B5572894561700D4A990 /* HistoryTableViewCell.swift */,
+				4A68B546289446A500D4A990 /* Main.storyboard */,
+				4A68B54E289446A700D4A990 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A68B560289A030300D4A990 /* Controlers */ = {
+			isa = PBXGroup;
+			children = (
+				4A68B544289446A500D4A990 /* ViewController.swift */,
+				4A68B5592894564E00D4A990 /* HistoryTableViewController.swift */,
+			);
+			path = Controlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,11 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A68B564289A067E00D4A990 /* ProcessingRate.swift in Sources */,
+				4A68B562289A05B000D4A990 /* ProcessingDataManager.swift in Sources */,
 				4A68B545289446A500D4A990 /* ViewController.swift in Sources */,
 				4A68B541289446A400D4A990 /* AppDelegate.swift in Sources */,
 				4A68B55A2894564E00D4A990 /* HistoryTableViewController.swift in Sources */,
 				4A68B54B289446A500D4A990 /* processingSaver.xcdatamodeld in Sources */,
 				4A68B543289446A500D4A990 /* SceneDelegate.swift in Sources */,
+				4A68B566289AEC5300D4A990 /* PDataHistory.swift in Sources */,
 				4A68B5582894561700D4A990 /* HistoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
